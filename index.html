@@ -21,11 +21,11 @@
     <title>Glory's Page</title>
   </head>
   
-  <body style="background-color:rgb(221, 217, 217)";>
+  <body>
     <div id="page-container">
         <!-- Navbar -->
         <div id="navbar">
-            <ul class="nav justify-content-center bg-dark ">
+            <ul class="nav fixed-top justify-content-center bg-dark ">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#about" style="color:rgb(221, 154, 207)";>About</a>
                 </li>
@@ -38,83 +38,148 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contact" style="color:rgb(221, 154, 207)";>Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link resume-btn" href="/resume.pdf" download="glory-resume" style="color:rgb(221, 154, 207)";>Resume</a>
-                </li>
             </ul>
         </div>
         
         <div id="content-wrap">
             <!-- About Section -->
-            <section id="about">
-                <div class="container my-4">
-                    <div class="row">
-                        <div class="col-6">
-                            <h1 class="display-3" style="color:rgb(183, 117, 169)";>Glory Annen</h1>
-                            <p class="lead" style="color:rgb(82, 74, 81)";>
-                                <strong>
-                                    Welcome! I'm a <span style="color:rgb(221, 154, 207)";>software engineer</span> specializing in the development of applications in order to provide exceptional and accessible user experience.
-                                </strong>
-                            </p>
-                        </div>
-                        <div class="col-6 text-center">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" class="img-fluid rounded" alt="Picture of Glory Annen">
-                        </div>
-                    </div>
-                </div>
+            <section id="about" class="d-flex align-items-center justify-content-center">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-6 ">
+                          <h1 class="display-3 mb-5 mt-3" style="color:rgb(183, 117, 169)";>{ Glory Annen }</h1>
+                          <p class="lead">
+                              <strong>
+                                  Welcome! I'm a <span style="color:rgb(183, 117, 169)";>software engineer</span> specializing in the development of applications in order to provide exceptional and accessible user experience.
+                              </strong>
+                          </p>
+                          <a href="https://drive.google.com/file/d/1Ir68aa_7HfZTuMVhIWZgMHFIy_gimXY_/view?usp=sharing" class="mt-5" style="color:rgb(183, 117, 169)" title="Link to Glory Annen's resume"
+                          target="_blank" id="resume-btn">Resume
+                          </a>
+                          <a href="/imgs/Glory Annen _resume.pdf" download="glory_annen_resume"><i class="fa-solid fa-file-arrow-down fa-2xl" style="color:rgb(183, 117, 169)"></i></a>
+                      </div>
+                      <div class="col-6 text-center">
+                          <img src="https://pbs.twimg.com/profile_images/1543043054139047941/HgRkOfkI_400x400.jpg" class="img-fluid rounded" alt="Picture of Glory Annen">
+                      </div>
+                  </div>
+              </div>
             </section>
 
             <!-- Technologies Section -->
-            <section id="technologies" class="bg-dark mb-5" style="color:rgb(221, 217, 217)";>
+            <section id="technologies" class="d-flex align-items-center justify-content-center text-center">
                 <div class="container">
-                    <h3 class="display-4" style="color:rgb(183, 117, 169)";>Technologies</h3>
-                    <p>I currently use the below frameworks and languages. But it doesn't stop there, I'm always learning something new!</p>
-                    <div class="col-12">
-                        <ul class="list-group list-group-horizontal-lg" style="color:rgb(183, 117, 169)";>
+                    <h2 class="display-3" style="color:rgb(183, 117, 169)";>{ Technologies }</h2>
+                    <p class="my-5">I currently use these languages, libraries, and frameworks. But it doesn't stop there, I'm always learning something new!</p>
+                    <div class="col-12 mt-5">
+                        <ul class="list-inline list-group list-group-horizontal-lg rounded justify-content-center" style="color:rgb(183, 117, 169)";>
                             <!-- HTML brand icon-->
                             <li class="list-group-item">
-                                <i class="fa-brands fa-html5 fa-xl"> HTML5</i>
+                                <i class="fa-brands fa-html5 fa-xl"></i>
+                                <small class="flex-fill" style="font-family: Verdana; font-size:16px";> HTML5</small>
                                     
                             </li>
 
                             <!-- CSS brand icon-->
                             <li class="list-group-item">
-                                <i class="fa-brands fa-css3-alt fa-xl"> CSS3</i>
+                                <i class="fa-brands fa-css3-alt fa-xl"></i>
+                                <small class="flex-fill" style="font-family: Verdana; font-size:14px";> CSS3</small>
                             </li>    
 
                             <!-- JS brand icon-->
                             <li class="list-group-item">
-                                <i class="fa-brands fa-js fa-xl"> JavaScript</i>
+                                <i class="fa-brands fa-js fa-xl"></i>
+                                <small class="flex-fill" style="font-family: Verdana; font-size:14px";> JavaScript</small>
                             </li>
+
                             <!-- React brand icon-->
                             <li class="list-group-item">
-                                <i class="fa-brands fa-react fa-xl"> React</i>
+                                <i class="fa-brands fa-react fa-xl"></i>
+                                <small class="flex-fill" style="font-family: Verdana; font-size:14px";> React</small>
                             </li>    
 
                             <!-- NodeJS brand icon-->
                             <li class="list-group-item">
-                                <i class="fa-brands fa-node-js fa-xl"> Node.js</i>
+                                <i class="fa-brands fa-node-js fa-xl"></i>
+                                <small class="flex-fill" style="font-family: Verdana; font-size:14px";> NodeJS</small>
                             </li>
 
                             <!-- Python brand icon-->
                             <li class="list-group-item">
-                                <i class="fa-brands fa-python fa-xl"> Python</i>
+                                <i class="fa-brands fa-python fa-xl"></i>
+                                <small class="flex-fill" style="font-family: Verdana; font-size:14px";> Python</small>
                             </li>
+
                             <!-- PostgreSQL brand icon-->
                             <li class="list-group-item">
-                                <i class="fa-solid fa-database fa-xl"> PostgreSQL</i>
+                                <i class="fa-solid fa-database fa-xl"></i>
+                                <small class="flex-fill" style="font-family: Verdana; font-size:14px";> PostgreSQL</small>
                             </li>
                         </ul>    
-
                     </div>
                 </div>
-               
             </section>
+            <!-- Projects Section -->
+            <section id="projects" class="d-flex align-items-center justify-content-center text-center">
+              <div class="container">
+                <h3 class="display-4" style="color:rgb(183, 117, 169)">{ Projects }</h3>
+                <div class="col-12 mt-5">
+                  <div class="row justify-content-center">
+                    
+                    <!-- Bored App Project-->
+                    <div class="card mb-3 text-left text-dark" style="width: 25rem;">
+                      <img src="imgs/boredmobile.jpg" class="card-img-top img-fluid" alt="Snapshot of the Bored Application by Glory";>
+                      <div class="card-body">
+                        <h5 class="card-title"><u>Bored App</u></h5>
+                        <p class="card-text">A simple activity application. This application uses third party API to receive activities.
+                          <br>
+                          <strong>Built with NodeJS, JavaScript, Flask and Flask-SQLAlchemy, RESTful API.</strong></p>
+                        <p class="card-text">
+                          <a
+                          href="https://bored-by-lenuvia.herokuapp.com"
+                          title="Link to Heroku Bored application by Glory Annen"
+                          target="_blank"
+                          style="color:rgb(183, 117, 169); float: right";
+                          class="mx-2"
+                          >
+                          <i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i>
+                          </a>
+                          <a
+                          href="https://github.com/lenuvia/Bored-App"
+                          title="Link to GitHub Bored application repository"
+                          target="_blank"
+                          style="color:rgb(183, 117, 169); float: right";
+                          >
+                            <i class="fab fa-github fa-xl"></i>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>   
+            <!-- Projects Section -->
+            <section id="contact" class="d-flex align-items-center justify-content-center text-center">
+              <div class="container">
+                <h3 class="display-4" style="color:rgb(183, 117, 169)">{ Contact }</h3>
+                <p class="mt-5">I'm currently open to work opportunities in regards to <strong>Software Engineering/Software Development</strong> roles!</p>
+                <p>Feel free to strike up a conversation or say hello.</p>
+                <a
+                href="mailto: gloryannrios@gmail.com"
+                title="Email Glory Annen"
+                target="_blank"
+                class="mt-5"
+                id="email-btn"
+                >Say Hello</a>
+                
+              </div>
+            </section>    
+            
         </div>
     
 
     <!-- Footer-->
-    <footer id="footer" class="bg-dark text-center mt-5">
+    <footer id="footer" class="bg-dark text-center">
       <!-- Footer Elements -->
       <div class="container">
         <!-- Grid row-->
@@ -166,7 +231,7 @@
         </div>
     </div>
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3 text-light">
+      <div class="footer-copyright text-center py-3">
         <small>© 2022 Glory Annen</small>
       </div>
     </footer>
